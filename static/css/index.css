@@ -1,0 +1,86 @@
+body{
+	padding: 0;
+	margin:0;
+	font-family: "Quicksand", sans-serif;
+	overflow: hidden;
+}
+
+#container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+#navigation{
+	width: 20vw;
+	height: 100vh;
+	background-image: linear-gradient(to bottom right, #ec008c, #fc6767);
+}
+
+#info{
+	width: 80vw;
+	height: 100vw;
+	display: inline-block;
+}
+
+#topbar{
+	height: 10vh;
+	width: 100vw;
+	border-bottom: 1px solid #d0d3d6;
+	z-index: 1;
+}
+
+#data{
+	height: 90vh;
+	width: 80vw;
+	background: #f7f7f7;
+	text-align: center;
+}
+
+#metrics-container{
+	width: 70vw;
+	height: 60vh;
+	display: inline-block;
+	margin-top: 15vh;
+}
+
+#metrics{
+	width: 70vw;
+	height: 60vh;
+	display: flex;
+}
+
+.dustbin-header{
+	height: 8vh;
+	width: 15vw;
+	font-weight: bold;
+	font-size: 2.5vh;
+	line-height: 8vh;
+	margin-bottom: 1vh;
+}
+
+.dustbin{
+	width: 15vw;
+	height: 30vh;
+	background-color: white;
+	box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	margin: 1vh;
+}
+
+#dashboard-heading{
+	height: 10vh;
+	color: white;
+	font-size: 3vh;
+	line-height: 10vh;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*Media query for phone devices*/
+@media screen 
+    and (max-width: 414px) 
+    and (max-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+
+    }	

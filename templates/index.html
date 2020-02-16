@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!--<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/index.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/quicksand.css') }}">
+</head>
+<body>
+	<div id = "container">
+		<div id = "navigation">
+			<div id = "dashboard-heading"><i class="fa fa-bars"></i> &nbsp; DASHBOARD</div>
+		</div>
+		<div id = "info">
+			<div id = "topbar"></div>
+			<div id = "data">
+				<div id = "metrics-container">
+					<div id = "metrics">
+						{% for trashcan in bins%}
+						<div class = "dustbin">
+							<div class = "dustbin-header">Trashcan {{ trashcan.dustbin_id }}</div>
+							<div class = "dustbin-data">
+								Trash: {{ trashcan.trash }}<br>
+								Recycle: {{ trashcan.recycling }}<br>
+								Compost: {{ trashcan.compost }}<br>
+							</div>
+						</div>
+						{%endfor%}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
